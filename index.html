@@ -1,9 +1,57 @@
 <!DOCTYPE html>
-<html>
-    <head>
 
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Tommy Vadakumchery - Home</title>
+        <meta name="description" content="Tommy Vadakumchery's Portfolio" />
+
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        hi
+        <header>
+            <h1>Tommy Vadakumchery</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./resume.html">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about-me">
+                <h2>About Me</h2>
+                <img id="headshot" src="./images/headshot.png" alt="Portrait of Tommy Vadakumchery" />
+                <p>Hello! I'm Tommy, a 2nd year BS/MS student at the Illinois Institute of Technology studying computer science.</p>
+                <p>I'm an aspiring software engineer with an attention to detail and a love for building entertaining creations!</p>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <p>During my free time, I like to strengthen my skillset by pursuing passion projects! One of my biggest motivators is being able to create things that people can play with.</p>
+                <article class="project">
+                    <h3>RTS Game</h3>
+                    <img src="./images/rts-game.png" alt="Screenshot of Tommy Vadakumchery's RTS Game"/>
+                    <p>A web-based RTS game where players fight for control of a randomly-generated network of nodes.</p>
+                    <p class="project-skills">Built using Node, functional React with Hooks, and socket.io.</p>
+                    <ul>
+                        <li><a href="https://www.github.com/tovaio/riskystrats/">Client Repository</a></li>
+                        <li><a href="https://www.github.com/tovaio/riskystrats-server/">Server Repository</a></li>
+                        <li><a href="https://tovaio.github.com/riskystrats/">Play!</a></li>
+                    </ul>
+                </article> 
+            </section>
+            <section id="contact-me">
+                <h2>Contact Me</h2>
+                <p>Feel free to contact me at any of the following links:</p>
+                <ul>
+                    <li><a href="https://www.github.com/tovaio/">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/tommy-vadakumchery-6a4646185/">LinkedIn</a></li>
+                    <li><a href="mailto:t.vadakumchery1@gmail.com">Email</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2020 Tommy Vadakumchery</p>
+        </footer>
     </body>
 </html>
