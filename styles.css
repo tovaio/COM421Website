@@ -1,0 +1,121 @@
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3em;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1 {
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.6em;
+}
+
+h3 {
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+
+li > a {
+    text-decoration: none;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color: black;
+}
+
+li > a:hover {
+    color: blue;
+    -webkit-text-fill-color: black;
+}
+
+section, article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'heading heading heading'
+        'left center right';
+}
+
+div {
+    align-self: center;
+}
+
+div.heading {
+    grid-area: heading;
+}
+
+div.left {
+    grid-area: left;
+    padding-right: 10%;
+}
+
+div.left2 {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    padding-right: 10%;
+}
+
+div.center {
+    grid-area: center;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+div.right {
+    grid-area: right;
+    text-align: right;
+    padding-left: 10%;
+}
+
+div.right2 {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    text-align: right;
+    padding-left: 10%;
+}
+
+img {
+    width: 100%;
+}
+
+img#headshot {
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: gray;
+}
+
+nav > ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+nav > ul > li {
+    display: inline;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+ul > li {
+    margin-bottom: 1em;
+}
