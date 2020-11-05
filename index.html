@@ -4,28 +4,28 @@
     <head>
         <meta charset="utf-8" />
         <title>Tommy Vadakumchery - Home</title>
-        <meta name="description" content="Tommy Vadakumchery's Portfolio" />
+        <meta name="description" content="Tommy Vadakumchery's Website" />
 
         <link rel="stylesheet" href="styles.css" />
 
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Merriweather&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <h1>Tommy Vadakumchery</h1>
             <nav>
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
+                    <li><a class="selected" href="./index.html">Home</a></li>
                     <li><a href="./resume.html">Resume</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section id="about-me">
-                <div class="right">
+                <div class="right vertical-center">
                     <img id="headshot" src="./images/headshot.png" alt="Portrait of Tommy Vadakumchery" />
                 </div>
-                <div class="left2">
+                <div class="left2 vertical-center">
                     <h2>About Me</h2>
                     <p>Hello! I'm Tommy, a 2nd year BS/MS student at the Illinois Institute of Technology studying computer science.</p>
                     <p>I'm an aspiring software engineer with an attention to detail and a love for building entertaining creations!</p>
@@ -36,8 +36,8 @@
                     <h2>Projects</h2>
                     <p>During my free time, I like to strengthen my skillset by pursuing passion projects! One of my biggest motivators is being able to create things that people can play with.</p>
 
-                    <article>
-                        <div class="left2">
+                    <article id="rts-game">
+                        <div class="left2 vertical-center">
                             <h3>RTS Game</h3>
                             <p>A web-based RTS game where players fight for control of a randomly-generated network of nodes.</p>
                             <p class="project-skills">Built using Node, functional React with Hooks, and socket.io.</p>
@@ -47,7 +47,7 @@
                                 <li><a href="https://tovaio.github.com/riskystrats/">Play!</a></li>
                             </ul>
                         </div>
-                        <div class="right">
+                        <div class="right vertical-center">
                             <img src="./images/rts-game.png" alt="Screenshot of Tommy Vadakumchery's RTS Game"/>
                         </div>
                     </article>

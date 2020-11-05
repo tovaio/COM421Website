@@ -1,43 +1,39 @@
 body {
     font-family: 'Merriweather', serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
 
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: max(640px, 50vw);
 }
 
 h1 {
-    font-family: 'Syncopate', sans-serif;
+    font-family: 'Krona One', sans-serif;
     text-transform: uppercase;
-    font-size: 2em;
 }
 
 h2 {
-    font-family: 'Syncopate', sans-serif;
+    font-family: 'Krona One', sans-serif;
     text-transform: uppercase;
-    font-size: 1.6em;
 }
 
 h3 {
-    font-family: 'Syncopate', sans-serif;
+    font-family: 'Krona One', sans-serif;
     text-transform: uppercase;
-    font-size: 1.4em;
 }
 
 li > a {
     text-decoration: none;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1.2em;
+    font-family: 'Krona One', sans-serif;
     text-transform: uppercase;
 
     color: black;
     -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
 
-li > a:hover {
+li > a:hover, li > a.selected {
     color: blue;
     -webkit-text-fill-color: black;
 }
@@ -51,7 +47,7 @@ section, article {
         'left center right';
 }
 
-div {
+div.vertical-center {
     align-self: center;
 }
 
@@ -117,5 +113,9 @@ nav > ul > li {
 }
 
 ul > li {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+}
+
+p.italic {
+    font-style: italic;
 }
