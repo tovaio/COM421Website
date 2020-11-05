@@ -7,9 +7,23 @@ body {
     width: max(640px, 50vw);
 }
 
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "title nav";
+}
+
 h1 {
     font-family: 'Cantarell', sans-serif;
     text-transform: uppercase;
+    
+    grid-area: title;
+}
+
+nav {
+    grid-area: nav;
+    align-self: center;
 }
 
 h2 {
@@ -20,6 +34,10 @@ h2 {
 h3 {
     font-family: 'Cantarell', sans-serif;
     text-transform: uppercase;
+}
+
+nav a {
+    font-weight: 700;
 }
 
 a {
@@ -96,14 +114,13 @@ footer {
 
 nav > ul {
     list-style-type: none;
-    text-align: center;
+    text-align: right;
     padding-left: 0;
 }
 
 nav > ul > li {
     display: inline;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 ul > li {
