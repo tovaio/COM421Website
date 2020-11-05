@@ -1,6 +1,6 @@
 body {
     font-family: 'Merriweather', serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
 
     margin-left: auto;
     margin-right: auto;
@@ -8,34 +8,27 @@ body {
 }
 
 h1 {
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Cantarell', sans-serif;
     text-transform: uppercase;
 }
 
 h2 {
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Cantarell', sans-serif;
     text-transform: uppercase;
 }
 
 h3 {
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Cantarell', sans-serif;
     text-transform: uppercase;
 }
 
-li > a {
+a {
     text-decoration: none;
-    font-family: 'Krona One', sans-serif;
-    text-transform: uppercase;
-
-    color: black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    color: gray;
 }
 
-li > a:hover, li > a.selected {
-    color: blue;
-    -webkit-text-fill-color: black;
+a:hover, a.selected {
+    color: black;
 }
 
 section, article {
@@ -92,6 +85,7 @@ img {
 
 img#headshot {
     border-radius: 50%;
+    width: 70%;
 }
 
 footer {
