@@ -14,16 +14,22 @@ header {
     grid-template-areas: "title nav";
 }
 
+nav {
+    grid-area: nav;
+    align-self: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: gray;
+}
+
 h1 {
     font-family: 'Cantarell', sans-serif;
     text-transform: uppercase;
     
     grid-area: title;
-}
-
-nav {
-    grid-area: nav;
-    align-self: center;
 }
 
 h2 {
@@ -32,12 +38,9 @@ h2 {
 }
 
 h3 {
-    font-family: 'Cantarell', sans-serif;
-    text-transform: uppercase;
-}
-
-nav a {
+    font-family: 'Merriweather', serif;
     font-weight: 700;
+    font-size: 1.1em;
 }
 
 a {
@@ -49,67 +52,81 @@ a:hover, a.selected {
     color: black;
 }
 
-section, article {
+nav a {
+    font-weight: 700;
+}
+
+.image-display {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 17fr 7fr;
     grid-template-areas:
-        'heading heading heading'
-        'left center right';
+        'heading image'
+        'content image';
 }
 
-div.vertical-center {
-    align-self: center;
+.image-display > .image-display-content {
+    grid-area: content;
+    align-self: start;
+    padding-right: 5%;
 }
 
-div.heading {
+.image-display > h2, .image-display > h3 {
     grid-area: heading;
+    padding-right: 5%;
+    margin-bottom: 0;
 }
 
-div.left {
-    grid-area: left;
-    padding-right: 10%;
-}
-
-div.left2 {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 1;
-    padding-right: 10%;
-}
-
-div.center {
-    grid-area: center;
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-div.right {
-    grid-area: right;
-    text-align: right;
-    padding-left: 10%;
-}
-
-div.right2 {
-    grid-column: 2 / span 2;
-    grid-row: 2 / span 1;
-    text-align: right;
-    padding-left: 10%;
-}
-
-img {
+.image-display > img {
+    grid-area: image;
+    align-self: center;
     width: 100%;
+    padding-left: 5%;
 }
 
 img#headshot {
     border-radius: 50%;
-    width: 70%;
 }
 
-footer {
-    text-align: center;
-    font-size: 0.8em;
-    color: gray;
+.resume-entry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'organization date'
+        'role location'
+        'details details';
+    margin-bottom: 1em;
+}
+
+.resume-entry > .resume-entry-title {
+    grid-area: organization;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.resume-entry > .resume-entry-subtitle {
+    grid-area: role;
+    font-style: italic;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.resume-entry > .resume-entry-date {
+    grid-area: date;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.resume-entry > .resume-entry-location {
+    grid-area: location;
+    font-style: italic;
+    text-align: right;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.resume-entry > .resume-entry-details {
+    grid-area: details;
 }
 
 nav > ul {
@@ -125,8 +142,4 @@ nav > ul > li {
 
 ul > li {
     margin-bottom: 0.5em;
-}
-
-p.italic {
-    font-style: italic;
 }

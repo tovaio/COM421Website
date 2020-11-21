@@ -21,118 +21,96 @@
             </nav>
         </header>
         <main>
-            <section id="download">
-                <div class="heading">
-                    <p>You can download my resume as a PDF <a href="./Tommy_Vadakumchery_Resume_Nov_2020.pdf">here.</a></p>
-                </div>
-            </section>
+            <p>You can download my resume as a PDF <a href="./Tommy_Vadakumchery_Resume_Nov_2020.pdf">here.</a></p>
             <section id="education">
-                <div class="heading">
-                    <h2>Education</h2>
-                </div>
-                <div class="left2">
-                    <p>Illinois Institute of Technology</p>
-                    <p class="italic">Bachelor of Science, Computer Science</p>
-                    <ul>
-                        <li>GPA: 4.00 / 4.00</li>
-                        <li>Coursework: Data Structures, Discrete Structures, Algorithms, Computer Organization, Systems Programming, Operating Systems, Database Organization, Data Mining, Intro to Artificial Intelligence</li>
-                        <li>Extracurriculars: Camras Scholars Program, Association of Computing Machinery</li>
-                    </ul>
-                </div>
-                <div class="right">
-                    <p>August 2019 - May 2023</p>
-                    <p class="italic">Chicago, IL</p>
+                <h2>Education</h2>
+                <div id="iit" class="resume-entry">
+                    <h3 class="resume-entry-title">Illinois Institute of Technology</h3>
+                    <p class="resume-entry-subtitle">Bachelor of Science, Computer Science</p>
+                    <p class="resume-entry-date">August 2019 - May 2023</p>
+                    <p class="resume-entry-location">Chicago, IL</p>
+                    <div class="resume-entry-details">
+                        <ul>
+                            <li>GPA: 4.00 / 4.00</li>
+                            <li>Coursework: Data Structures, Discrete Structures, Algorithms, Computer Organization, Systems Programming, Operating Systems, Database Organization, Data Mining, Intro to Artificial Intelligence</li>
+                            <li>Extracurriculars: Camras Scholars Program, Association of Computing Machinery</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section id="experience">
-                <div class="heading">
-                    <h2>Experience</h2>
-                    <article id="roblox">
-                        <div class="left2">
-                            <p>Roblox</p>
-                            <p class="italic">Software Engineering Intern</p>
-                            <ul>
-                                <li>Implemented a framework in the Roblox Studio application to increase usage rates of new features by visually calling them out in the user interface</li>
-                                <li>Developed using C++ with the Qt application framework</li>
-                            </ul>
-                        </div>
-                        <div class="right">
-                            <p>June 2020 - August 2020</p>
-                            <p class="italic">San Mateo, CA</p>
-                        </div>
-                    </article>
-                    <article id="iit-ta">
-                        <div class="left2">
-                            <p>Illinois Institute of Technology</p>
-                            <p class="italic">Teaching Assistant</p>
-                            <ul>
-                                <li>Oversaw a lab section for a Java object-oriented programming class</li>
-                                <li>Graded lab assignments and assisted students during office hours</li>
-                            </ul>
-                        </div>
-                        <div class="right">
-                            <p>January 2020 - May 2020</p>
-                            <p class="italic">Chicago, IL</p>
-                        </div>
-                    </article>
-                    <article id="mirc">
-                        <div class="left2">
-                            <p>Medical Imaging Research Center @ IIT</p>
-                            <p class="italic">Computer Vision Research Assistant</p>
-                            <ul>
-                                <li>Participated in a computer vision project under Dr. Miles Wernick focused on pedestrian detection</li>
-                                <li>Implemented background subtraction and optical flow using Python with OpenCV</li>
-                            </ul>
-                        </div>
-                        <div class="right">
-                            <p>August 2017 - May 2018</p>
-                            <p class="italic">Chicago, IL</p>
-                        </div>
-                    </article>
+                <h2>Experience</h2>
+                <div id="roblox" class="resume-entry">
+                    <h3 class="resume-entry-title">Roblox</h3>
+                    <p class="resume-entry-subtitle">Software Engineering Intern</p>
+                    <p class="resume-entry-date">June 2020 - August 2020</p>
+                    <p class="resume-entry-location">San Mateo, CA</p>
+                    <div class="resume-entry-details">
+                        <ul>
+                            <li>Implemented a framework in the Roblox Studio application to increase usage rates of new features by visually calling them out in the user interface</li>
+                            <li>Developed using C++ with the Qt application framework</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="iit-ta" class="resume-entry">
+                    <h3 class="resume-entry-title">Illinois Institute of Technology</h3>
+                    <p class="resume-entry-subtitle">Teaching Assistant</p>
+                    <p class="resume-entry-date">January 2020 - May 2020</p>
+                    <p class="resume-entry-location">Chicago, IL</p>
+                    <div class="resume-entry-details">
+                        <ul>
+                            <li>Oversaw a lab section for a Java object-oriented programming class</li>
+                            <li>Graded lab assignments and assisted students during office hours</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="mirc" class="resume-entry">
+                    <h3 class="resume-entry-title">Medical Imaging Research Center @ IIT</h3>
+                    <p class="resume-entry-subtitle">Computer Vision Research Assistant</p>
+                    <p class="resume-entry-date">August 2017 - May 2018</p>
+                    <p class="resume-entry-location">Chicago, IL</p>
+                    <div class="resume-entry-details">
+                        <ul>
+                            <li>Participated in a computer vision project under Dr. Miles Wernick focused on pedestrian detection</li>
+                            <li>Implemented background subtraction and optical flow using Python with OpenCV</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section id="experience">
-                <div class="heading">
-                    <h2>Projects</h2>
-                    <article id="rts-game">
-                        <div class="left2">
-                            <p>RTS Game</p>
-                            <ul>
-                                <li>Browser-based online multiplayer RTS game written primarily in TypeScript</li>
-                                <li>Frontend written using React which renders the game using SVG graphics</li>
-                                <li>Backend written with Node which interacts with the frontend using socket.io, a package for WebSocket communication</li>
-                                <li>Demonstration available <a href="https://tovaio.github.io/riskystrats/">here</a></li>
-                                <li>Repository available <a href="https://www.github.com/tovaio/riskystrats/">here</a></li>
-                            </ul>
-                        </div>
-                        <div class="right">
-                            <p>May 2020</p>
-                        </div>
-                    </article>
+                <h2>Projects</h2>
+                <div id="rts-game" class="resume-entry">
+                    <h3 class="resume-entry-title">RTS Game</h3>
+                    <p class="resume-entry-date">May 2020</p>
+                    <div class="resume-entry-details">
+                        <ul>
+                            <li>Browser-based online multiplayer RTS game written primarily in TypeScript</li>
+                            <li>Frontend written using React which renders the game using SVG graphics</li>
+                            <li>Backend written with Node which interacts with the frontend using socket.io, a package for WebSocket communication</li>
+                            <li>Demonstration available <a href="https://tovaio.github.io/riskystrats/">here</a></li>
+                            <li>Repository available <a href="https://www.github.com/tovaio/riskystrats/">here</a></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section id="awards">
-                <div class="heading">
-                    <h2>Awards</h2>
+                <h2>Awards</h2>
+                <div id="dare-mighty-things" class="resume-entry">
+                    <h3 class="resume-entry-title">Best of Show at Dare Mighty Things Hackathon</h3>
+                    <p class="resume-entry-date">October 2019</p>
                 </div>
-                <div class="left2">
-                    <p><span class="italic">Best of Show</span> at Dare Mighty Things Hackathon</p>
-                    <p><span class="italic">Best MongoDB Hack</span> at VandyHacks</p>
-                </div>
-                <div class="right">
-                    <p>October 2019</p>
-                    <p>November 2019</p>
+                <div id="vandyhacks" class="resume-entry">
+                    <h3 class="resume-entry-title">Best MongoDB Hack at VandyHacks</h3>
+                    <p class="resume-entry-date">November 2019</p>
                 </div>
             </section>
             <section id="skills">
-                <div class="heading">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>Languages: C++, TypeScript, JavaScript, Python, Java, C#, Lua</li>
-                        <li>Frameworks: Node, Express, React, Qt, Flask, numpy/pandas</li>
-                        <li>Other: Git, LaTeX</li>
-                    </ul>
-                </div>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Languages: C++, TypeScript, JavaScript, Python, Java, C#, Lua</li>
+                    <li>Frameworks: Node, Express, React, Qt, Flask, numpy/pandas</li>
+                    <li>Other: Git, LaTeX</li>
+                </ul>
             </section>
         </main>
         <footer>
